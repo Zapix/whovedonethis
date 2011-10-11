@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="django-whovedonethis",
-    version="0.0.9",
+    version="0.0.10",
     author="Aleksandr Aibulatov",
     author_email="zap.aibulatov@gmail.com",
     description="Simple pluggable django application",

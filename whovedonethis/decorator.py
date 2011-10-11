@@ -29,7 +29,7 @@ def add_updated_user(f):
         return f(sender, instance, **kwargs)
     return wrapper
     
-add_created_and_updated_user = add_created_user(add_updated_user)
+add_created_and_updated_user = lambda x: add_created_user(add_updated_user(x))
 add_created_and_updated_user.__doc__ =\
     '''
         Decorate pre_save signal for adding created user
